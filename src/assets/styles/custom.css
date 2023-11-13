@@ -1,0 +1,1126 @@
+input[type='number'] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.mioto-layout {
+  overflow: hidden;
+}
+
+.body {
+  overflow: hidden;
+}
+
+.has-list .map-container {
+  height: calc(100vh - 120px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.map-container {
+  height: calc(100vh - 120px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.filter-body {
+  height: calc(100vh - 120px);
+}
+
+.finding-section.fixed {
+  z-index: 1000 !important;
+}
+
+.list-car-section {
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+.blah.loading-date {
+  height: unset !important;
+  margin: -30px auto 25px !important;
+}
+
+.swiper-slide-active .car-item-wrapper {
+  cursor: pointer;
+}
+
+.func-remove-x:hover {
+  z-index: 9999;
+}
+
+/*info window in google map*/
+.gm-style-iw + div {
+  display: none;
+}
+
+.gm-style-iw {
+  left: 27px !important;
+}
+
+.modal-dialog.modal-lg .modal-content {
+  max-width: 870px;
+}
+
+/*react burger sidebar */
+.bm-burger-button {
+  /* position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px; */
+  display: none;
+}
+
+.bm-cross {
+  background: #000;
+}
+
+/*Google map custom popup*/
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+/* #map {
+  height: 100%;
+} */
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* The location pointed to by the popup tip. */
+.popup-tip-anchor {
+  height: 0;
+  position: absolute;
+  /* The max width of the info window. */
+  width: 200px;
+}
+
+.popup-pos-anchor {
+  z-index: 3;
+}
+
+.popup-tip-anchor:hover {
+  z-index: 2;
+}
+
+/* The bubble is anchored above the tip. */
+.popup-bubble-anchor {
+  position: absolute;
+  width: 100%;
+  bottom:
+      /* TIP_HEIGHT= */ 8px;
+  left: 0;
+  cursor: pointer;
+}
+
+.popup-bubble-anchor.car-gps {
+  bottom: -85px;
+}
+
+.popup-bubble-anchor.car-gps::after {
+  display: none;
+}
+
+/* Draw the tip. */
+.popup-bubble-anchor::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Center the tip horizontally. */
+  transform: translate(-50%, 0);
+  /* The tip is a https://css-tricks.com/snippets/css/css-triangle/ */
+  width: 0;
+  height: 0;
+  /* The tip is 8px high, and 12px wide. */
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #4a4a4a;
+}
+
+/* The popup bubble itself. */
+.popup-bubble-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-5%, -100%);
+  transform: translate(-50%, -100%);
+  /* Style the info window. */
+  background-color: #fff;
+  color: rgba(18, 18, 19, 0.933);
+  padding: 3px 4px;
+  border-radius: 5px;
+  /* font-family: sans-serif; */
+  font-size: 13px;
+  overflow-y: auto;
+  max-height: 60px;
+  border: 1px solid #4a4a4a;
+}
+
+.popup-bubble-content.popup-car-gps
+
+/* .popup-bubble-content*/ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-5%, -100%);
+  color: rgba(18, 18, 19, 0.933);
+  padding: 3px 4px;
+  /* font-family: sans-serif; */
+  font-size: 13px;
+  background: none;
+  border: none;
+  overflow: unset;
+}
+
+.popup-pos-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -100%);
+  /* Style the info window. */
+  overflow-y: auto;
+  max-height: 60px;
+}
+
+.active .popup-bubble-content {
+  background-color: #00a550;
+  color: rgba(255, 255, 255, 0.933);
+  z-index: 1;
+}
+
+.popup-header {
+  font-weight: bold;
+  text-align: center;
+}
+
+.popup.status {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+/** Style for the info bubble content */
+.H_ui .H_ib_body {
+  background: none;
+  box-shadow: none;
+}
+/** Style for the info bubble tail */
+
+.H_ui .H_ib_content {
+  font-size: 8px;
+  text-align: center;
+  min-width: 11em;
+  line-height: 10px;
+  margin: 0;
+}
+.H_ui .H_ib_content > p {
+  text-align: center !important;
+  margin: 0;
+}
+.H_ui .H_ib_close,
+.H_ui .H_ib_tail {
+  display: none;
+}
+
+.gps-box-time {
+  padding-top: 20px;
+  position: relative;
+  left: -25%;
+}
+
+/*car detail calenadar*/
+.calendar-table th {
+  color: #4a4a4a;
+}
+
+.price-in-calendar {
+  display: block;
+  color: #aaaaaa;
+  font-size: 8px;
+  font-weight: 500;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+td.off span.price-in-calendar {
+  color: #ccc9c9;
+}
+
+td.available {
+  background-color: #ebf4f8;
+}
+
+#booking-sidebar td.out span.date-in-calendar {
+  display: none;
+}
+
+#booking-sidebar td.out span.price-in-calendar {
+  display: none;
+}
+
+#booking-sidebar td.out span.full-in-calendar {
+  display: none;
+}
+
+#booking-sidebar td.out .ic.instant-in-calendar {
+  display: none;
+}
+
+td.in.disabled {
+  background-color: #f0f0f0;
+}
+
+#booking-sidebar tr:last-child td.out.off.after {
+  display: none;
+}
+
+td .full-in-calendar {
+  opacity: 0.8;
+}
+
+/*common*/
+.ic {
+  cursor: pointer;
+}
+
+pre {
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+
+.customContentNotify b {
+  font-weight: 600;
+}
+
+/* React Datepicker */
+
+.wrap-input.datepicker .react-datepicker,
+.wrap-input.datepicker .react-datepicker-wrapper {
+  display: flex !important;
+}
+
+.datepicker .react-datepicker {
+  font-family: 'Sanomat Sans';
+  font-size: 0.8rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 0.3rem;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 0;
+}
+
+.datepicker .react-datepicker__header {
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.datepicker .react-datepicker__current-month,
+.datepicker .react-datepicker-time__header {
+  color: #4a4a4a;
+  margin-bottom: 0.5rem;
+  font-size: 1em;
+}
+
+.datepicker .react-datepicker__day-names {
+  border-bottom: 1px solid #d3d3d3;
+  border-top: 1px solid #d3d3d3;
+}
+
+.datepicker .react-datepicker__day-name {
+  color: #4a4a4a;
+  font-weight: 600;
+}
+
+.datepicker .react-datepicker__day-name,
+.datepicker .react-datepicker__day,
+.datepicker .react-datepicker__time-name {
+  margin: 0.25rem;
+}
+
+.datepicker .react-datepicker__day--selected:hover,
+.datepicker .react-datepicker__day--in-selecting-range:hover,
+.datepicker .react-datepicker__day--in-range:hover {
+  background-color: #00a550;
+}
+
+.datepicker .react-datepicker__day--selected,
+.datepicker .react-datepicker__day--in-selecting-range,
+.datepicker .react-datepicker__day--in-range {
+  border-radius: 0;
+  background-color: #00a550;
+}
+
+.datepicker .react-datepicker__day:hover {
+  border-radius: 0;
+}
+
+.datepicker .react-datepicker__navigation--previous {
+  border-right-color: #00a550;
+}
+
+.datepicker .react-datepicker__navigation--next {
+  border-left-color: #00a550;
+}
+
+.datepicker .react-datepicker-popper {
+  z-index: 10;
+}
+
+.datepicker .react-datepicker__day--keyboard-selected {
+  background-color: #00a550;
+  border-radius: 0;
+}
+
+.datepicker
+  .react-datepicker-popper[data-placement^='bottom']
+  .react-datepicker__triangle {
+  border-bottom-color: #ffffff !important;
+}
+
+.datepicker
+  .react-datepicker-popper[data-placement^='bottom']
+  .react-datepicker__triangle::before {
+  border-bottom-color: #aeaeae !important;
+}
+
+/* Hidden date out of month */
+
+.daterangepicker .calendar-table tbody td.out.off.disabled {
+  visibility: hidden;
+}
+
+.react-datepicker__month-dropdown-container--select,
+.react-datepicker__year-dropdown-container--select {
+  position: relative;
+}
+
+.react-datepicker__header__dropdown
+  .react-datepicker__year-dropdown-container--select::after,
+.react-datepicker__header__dropdown
+  .react-datepicker__month-dropdown-container--select::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 45%;
+  padding: 0;
+  border: 0.45rem solid transparent;
+  z-index: 1;
+  overflow: hidden;
+  border-top-color: #00a550;
+}
+
+/* .text-link {
+color: #57a8ff !important
+} */
+
+/* .notice-form {
+background-color: rgba(250, 125, 25, .05);
+padding: .25rem 1rem;
+margin-bottom: 10px;
+} */
+
+.fileContainer {
+  box-shadow: none;
+  background: transparent;
+}
+
+.form-default p.info {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 0.8125rem;
+}
+
+.form-default p.info > i {
+  margin-right: 5px;
+  transform: scale(0.75);
+}
+
+.text-gray {
+  color: gray !important;
+}
+
+.d-flex.center {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.here-autocomplete .autocomplt-box {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.here-autocomplete .autocomplt-box.light {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid #e8e8e8;
+}
+
+.here-autocomplete .autocomplt-box.light .location-item p {
+  color: #141414;
+  font-size: 0.8125rem;
+}
+
+.here-autocomplete .autocomplt-box .location-item {
+  padding: 0.5rem 0.75rem;
+  justify-content: unset;
+  align-items: flex-start;
+}
+
+.here-autocomplete .autocomplt-box .location-item:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+.here-autocomplete .autocomplt-box.light .location-item:hover {
+  background-color: #fafafa;
+}
+
+.here-autocomplete .autocomplt-box .location-item p {
+  font-size: 0.875rem;
+  margin: 0;
+  line-height: 24px;
+}
+
+.here-autocomplete .autocomplt-box .location-item i {
+  margin-right: 0.5rem;
+  position: static !important;
+  min-width: 24px;
+}
+
+.hiddenInput {
+  position: relative;
+  z-index: -1;
+}
+
+.hasCursor {
+  cursor: pointer;
+}
+
+.ins-container .option-ins .ic {
+  cursor: auto !important;
+}
+
+.have-change {
+  cursor: auto !important;
+}
+
+.dt-backdrop.modal-backdrop.in {
+  display: block !important;
+}
+
+/* .ins-container .box-car__detail .vehicle-models  .col .option.active, .ins-container .box-car__detail .vehicle-models .col .option:hover {
+border: none;
+} */
+.form-default .text-as-input {
+  width: 100%;
+  padding: 11px 20px;
+  font-size: 0.875rem;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0;
+}
+
+.daterangepicker.dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  display: none;
+  -webkit-box-shadow: 0px 16px 32px rgba(30, 31, 36, 0.2);
+  box-shadow: 0px 16px 32px rgba(30, 31, 36, 0.2);
+  border-radius: 10px;
+  width: 648px;
+  padding: 15px 10px;
+}
+
+.daterangepicker.dropdown-menu::before {
+  border-bottom: 7px solid #fff;
+  box-shadow: 0px 16px 32px rgba(30, 31, 36, 0.2);
+}
+
+.daterangepicker.dropdown-menu.single-calendar {
+  width: 330px;
+}
+
+.daterangepicker.dropdown-menu .calendar {
+  width: 49% !important;
+}
+
+.daterangepicker.dropdown-menu.single-calendar .calendar {
+  width: 100% !important;
+}
+
+.daterangepicker.dropdown-menu > .c-title {
+  padding: 15px 10px;
+}
+
+.daterangepicker.dropdown-menu .daterangepicker_input .c-note {
+  font-size: 1rem;
+  color: #888888;
+  text-align: right;
+}
+
+.daterangepicker.dropdown-menu .c-title {
+  width: 100%;
+  color: #242420;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.module-detail.dt__wrapper
+  .daterangepicker.dropdown-menu
+  .daterangepicker_input
+  .c-title {
+  padding-left: 0;
+}
+
+.daterangepicker_input .input-mini.active {
+  border: 1px solid #5fcf86;
+}
+
+.daterangepicker .calendar .daterangepicker_input .line {
+  width: 100%;
+  border-top: 1px solid #e6e8f0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.daterangepicker .calendar .daterangepicker_input .pickup {
+  color: #696f8c;
+  font-size: 0.875rem;
+}
+
+.module-detail.dt__wrapper
+  .daterangepicker
+  .calendar
+  .daterangepicker_input
+  .c-note,
+.daterangepicker .calendar .daterangepicker_input .c-title {
+  margin-bottom: 0.75rem;
+  padding-left: 0;
+}
+
+.daterangepicker .calendar.left .calendar-time {
+  position: relative;
+}
+
+.daterangepicker .calendar.left .calendar-time:after {
+  content: '';
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 20%;
+  right: -20%;
+  background-image: url('../images/arr-calendar.png');
+}
+
+.daterangepicker.single-calendar .calendar.left .calendar-time:after {
+  content: none;
+}
+
+.daterangepicker .calendar.right .calendar-time {
+  margin-left: 10%;
+}
+
+.daterangepicker .calendar .calendar-time {
+  width: 90%;
+  text-align: left;
+  border-radius: 6px;
+  border: 1px solid #e6e8f0;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.daterangepicker.single-calendar .calendar .calendar-time {
+  width: 100%;
+}
+
+.daterangepicker .calendar .calendar-time div {
+  color: #242420;
+}
+
+.daterangepicker .calendar .calendar-time div select {
+  font-size: 1.25rem;
+}
+
+.daterangepicker .calendar .calendar-time select.ampmselect,
+.daterangepicker .calendar .calendar-time select.hourselect,
+.daterangepicker .calendar .calendar-time select.minuteselect,
+.daterangepicker .calendar .calendar-time select.secondselect {
+  width: auto;
+  border-radius: 0px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.daterangepicker .calendar .calendar-time select.hourselect,
+.daterangepicker .calendar .calendar-time select.minuteselect {
+  padding: 0 10px;
+}
+
+.daterangepicker .calendar-table table {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: none;
+}
+
+.daterangepicker .calendar-table thead tr th {
+  /* border-bottom: 1px solid lightgray; */
+}
+
+.daterangepicker td {
+  border: none;
+}
+
+.daterangepicker .calendar-table thead th {
+  width: auto;
+  border-radius: 0px;
+  padding: 5px 0;
+  background: #fff;
+}
+
+.daterangepicker .calendar-table thead th.available {
+  position: relative;
+}
+
+.daterangepicker .calendar-table thead th .datepicker-navigation {
+  line-height: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  width: 0;
+  border: 0.45rem solid transparent;
+  z-index: 1;
+}
+
+.daterangepicker .calendar-table thead th .datepicker-navigation.left {
+  left: 10px;
+  border-right-color: #5fcf86;
+}
+
+.daterangepicker .calendar-table thead th .datepicker-navigation.left:hover {
+  border-right-color: #009548;
+}
+
+.daterangepicker .calendar-table thead th .datepicker-navigation.right {
+  border-left-color: #5fcf86;
+  right: 10px;
+}
+
+.daterangepicker .calendar-table thead th .datepicker-navigation.right:hover {
+  border-left-color: #009548;
+}
+
+.daterangepicker .calendar-table tbody tr:hover td {
+  border-radius: 0px;
+}
+
+.daterangepicker .calendar-table tbody td {
+  position: relative;
+  font-weight: 700;
+}
+
+.daterangepicker .calendar-table tbody td.in.disabled {
+  color: #c6c6c6;
+  background-color: #ffffff;
+}
+
+.daterangepicker .calendar-table tbody td.available {
+  background-color: white;
+}
+
+.daterangepicker .calendar-table tbody td.active.available,
+.daterangepicker .calendar-table tbody td.active.available:hover {
+  background-color: #5fcf86;
+  color: #fff;
+}
+
+.daterangepicker .calendar-table tbody td.available.in-range {
+  background-color: #dff5e7;
+  color: #141414;
+}
+
+.daterangepicker .calendar-table tbody td.available.active.start-date,
+.daterangepicker .calendar-table tbody td.active.available.end-date {
+  background-color: #5fcf86;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.daterangepicker
+  .calendar-table
+  tbody
+  td.available.active.start-date
+  .price-in-calendar,
+.daterangepicker
+  .calendar-table
+  tbody
+  td.active.available.end-date
+  .price-in-calendar,
+.daterangepicker
+  .calendar-table
+  tbody
+  td.available.active.start-date:hover
+  .price-in-calendar,
+.daterangepicker
+  .calendar-table
+  tbody
+  td.active.available.end-date:hover
+  .price-in-calendar,
+.daterangepicker
+  .calendar-table
+  tbody
+  td.available.in-range:hover
+  .price-in-calendar {
+  color: #ffffff;
+}
+
+.daterangepicker
+  .calendar-table
+  tbody
+  td.available.active.start-date
+  .instant-in-calendar
+  > path,
+.daterangepicker
+  .calendar-table
+  tbody
+  td.active.available.end-date
+  .instant-in-calendar
+  > path,
+.daterangepicker
+  .calendar-table
+  tbody
+  td.available.in-range:hover
+  .instant-in-calendar
+  > path {
+  fill: #ffffff;
+}
+
+.daterangepicker .calendar-table tbody td.active.available.start-date:after,
+.daterangepicker
+  .calendar-table
+  tbody
+  td.active.available.start-date:hover:after,
+.daterangepicker .calendar-table tbody td.active.available.end-date:after,
+.daterangepicker .calendar-table tbody td.available.in-range:hover:after {
+  /* content: "";
+position: absolute;
+top: 0;
+left: 100%;
+width: 100%;
+height: 100%;
+background-color: #DFF5E7;
+border-radius: 2px;
+z-index: 1; */
+  /* -webkit-clip-path: polygon(2% 0, 20% 50%, 2% 100%, 0 100%, 0 0);
+clip-path: polygon(2% 0, 20% 50%, 2% 100%, 0 100%, 0 0); */
+}
+
+.daterangepicker .calendar-table tbody td.active.available.end-date:after,
+.daterangepicker .calendar-table tbody td.available.in-range:hover:after {
+  /* left: -100%; */
+  /* -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg); */
+}
+
+.daterangepicker .calendar-table tbody td.available.in-range:hover {
+  background-color: #5fcf86;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.daterangepicker
+  .calendar-table
+  tbody
+  td.available.in-range:hover
+  .price-in-calendar,
+.daterangepicker
+  .calendar-table
+  tbody
+  td.available.in-range
+  .price-in-calendar {
+  color: #242420;
+}
+
+.daterangepicker
+  .calendar-table
+  tbody
+  td.available.in-range:hover
+  .price-in-calendar {
+  color: #ffffff;
+}
+
+.daterangepicker
+  .calendar-table
+  tbody
+  td.active.available.start-date.in-range:hover:after,
+.daterangepicker
+  .calendar-table
+  tbody
+  td.active.available.start-date.end-date:after {
+  content: none;
+}
+
+.daterangepicker .ranges {
+  width: 100%;
+  text-align: right;
+  padding: 10px 14px;
+}
+
+.daterangepicker .range_inputs .applyBtn.btn,
+.daterangepicker .range_inputs .cancelBtn.btn {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+.unavail-in-calendar,
+.full-in-calendar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.full-in-calendar {
+  z-index: 2;
+  /* background: repeating-linear-gradient(-45deg, #E0E0E0, #E0E0E0 3px, #c01623 3px, #c01623 6px); */
+  background: repeating-linear-gradient(
+    -45deg,
+    #fff,
+    #fff 3px,
+    #e0e0e0 3px,
+    #e0e0e0 15px
+  );
+}
+
+.instant-in-calendar {
+  position: absolute;
+  top: 4px;
+  right: 2px;
+}
+
+.calendar-container .days .full-in-calendar {
+  z-index: 2;
+  background: repeating-linear-gradient(
+    -45deg,
+    #e0e0e0,
+    #e0e0e0 3px,
+    #c01623 3px,
+    #c01623 6px
+  );
+}
+
+.calendar-container .days li.gray {
+  background: #e0e0e0;
+}
+
+.daterangepicker.home .calendar-table tbody td {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.filter-toggle .rc-slider {
+  width: 95%;
+  margin: 5px auto;
+}
+
+.rc-slider-handle {
+  transform: translate(-50%, -45%) !important;
+  margin-top: 0 !important;
+}
+
+#mapWD canvas,
+#map > canvas,
+#deli-map canvas,
+#loc-map canvas {
+  border-radius: 16px !important;
+}
+
+/* Woay.vn */
+
+.modal-woay.modal-banner {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin: auto !important;
+}
+
+.modal-woay.modal-dialog {
+  margin: 89px auto;
+}
+
+.modal-woay .modal-content {
+  background-color: unset !important;
+  box-shadow: none !important;
+}
+
+.modal-woay .modal-content .modal-header .close {
+  /* color: #ffffff !important; */
+  border-color: #000000 !important;
+}
+
+.w-modal {
+  z-index: 1200 !important;
+}
+
+.w-modal .modal__overlay {
+  z-index: 1200 !important;
+}
+
+.woay-box-wheel .woay-border {
+  width: 95% !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.w-info-more-vongquay .box-action a {
+  font-size: 16px !important;
+}
+
+.modal-body .banner-1 .box-img-flex {
+  height: 120px;
+}
+
+.banner-1 .box-img-flex img {
+  max-width: 360px !important;
+}
+
+#w-game #woay-game .woay-box-wheel {
+  max-width: 480px !important;
+}
+
+.modal-body .w-info-more-vongquay .box-action .box-btn {
+  width: 100% !important;
+}
+
+.w-reward-list .w-item-reward {
+  align-items: flex-end !important;
+  gap: 24px !important;
+}
+
+.w-modal .noti-submit {
+  color: #f04438 !important;
+  font-size: 14px !important;
+  margin-top: 14px !important;
+  font-weight: bold !important;
+}
+
+.w-modal .title-popup {
+  margin-bottom: 10px !important;
+}
+
+html body {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif !important;
+}
+
+body div,
+p,
+span,
+a {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif !important;
+}
+.modal-woay .btn-link.rule-game:hover,
+.modal-woay .btn-link.rule-game:focus,
+.modal-woay .btn-link.rule-game:active {
+  border: none;
+  color: #000000;
+}
+
+/* .modal-woay .btn-link.rule-game:focus, .modal-woay .btn-link.rule-game:active {
+  color: #000000
+} */
+
+.loading-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.loading-default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.animate-spin {
+  color: #5fcf86;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dropdown-enter {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.dropdown-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+.dropdown-exit {
+  opacity: 1;
+}
+.dropdown-exit-active {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+@media (max-width: 991px) {
+  .w-info-more-vongquay .box-action .box-btn {
+    padding: 0px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-woay.modal-dialog {
+    margin: 57px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-body .w-info-more-vongquay .box-action .box-btn {
+    flex-direction: column;
+  }
+  .modal-body .banner-1 .box-img-flex {
+    height: 90px;
+  }
+}
